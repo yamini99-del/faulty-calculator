@@ -1,31 +1,32 @@
-print("hello")
-print("Enter 1st Number")
-num1 = int(input())
-print('Enter 2nd Number')
-num2 = int(input())
-print('so What you Want?' + '+,-,/,%,*')
-num3 = input()
+print("********faulty calculator********")
+i=1
+while(i>0):
+    print("select the operator + ,-,/,*")
+    ope=input()
+    num1=int(input("enter a first number : "))
+    num2=int(input("enter a second number: "))
+    if(ope=='*'):
+       if(num1==45 and num2==3):
+           print("555")
+       else:    
+         mult=num1*num2
+         print(mult)
+    elif(ope=="+"):
+        if(num1==56 and num2==9):
+           print("77")
+        else:    
+          add=num1+num2
+          print(add)
+    elif(ope=='/'):
+        if(num1==56 and num2==4):
+            print("6")
+        else:
+          div=num1/num2
+          print(div)
+    elif(ope=='-'):
+       sub=num1-num2
+       print(sub)
+    else:
+       print("unexpected error")
+    i=int(input("to exit enter 0 or press any other num to continue"))   
 
-if num1 == 45 and num2 == 3 and num3 == '*':
-    print("555")
-elif num1 == 56 and num2 == 9 and num3 == '+':
-    print("77")
-elif num1 == 56 and num2 == 6 and num3 == '/':
-    print("4")
-elif num3 == '*':
-    num4 = num1 * num2
-    print(num4)
-elif num3 == '+':
-    plus = num2 + num1
-    print(plus)
-elif num3 == '/':
-    Dev = num2 / num1
-    print(Dev)
-elif num3 == '-':
-    Dev = num2 - num1
-    print(Dev)
-elif num3 == '%':
-    percent = num2 % num1
-    print(percent)
-else:
-    print("Error! Please check your input")
